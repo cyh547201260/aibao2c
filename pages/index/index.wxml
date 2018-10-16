@@ -1,0 +1,223 @@
+<!--index.wxml-->
+<view class='search-top-box'>
+  <input placeholder='请输入搜索关键词'></input>
+</view>
+<view class='banner-slide' >
+  <swiper indicator-dots="{{true}}" circular="{{true}}" indicator-color="{{'#FFFFFF'}}" indicator-active-color="{{'#2DD0BC'}}" autoplay="{{true}}" interval="3000">
+    <block>
+      <swiper-item>
+        <view>1<!--  --></view>
+      </swiper-item>
+      <swiper-item>
+        <view>2 <!--  --></view>
+      </swiper-item>
+      <swiper-item>
+        <view>3<!--  --></view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='nav-box'>
+  <view class='nav-item' bindtap='goClassFilter' data-type="1">
+    <image></image>
+    <span>书法辅导</span>
+  </view>
+  <view class='nav-item'>
+    <image></image>
+    <span>外语培训</span>
+  </view>
+  <view class='nav-item'>
+    <image></image>
+    <span>升学辅导</span>
+  </view>
+  <view class='nav-item'>
+    <image></image>
+    <span>在线教育</span>
+  </view>
+  <view class='nav-item'>
+    <image></image>
+    <span>美术教育</span>
+  </view>
+  
+</view>
+<view class='filter-list-box {{pageScrollToFixed ? "filter-box-fixed" : ""}}'>
+  <view class='list-item-box'>
+    <view class='filter-list-item' bindtap='chooseClass' data-type="1">分类</view>
+    <view class='filter-list-item' bindtap='chooseClass' data-type="2">地区</view>
+    <view class='filter-list-item' bindtap='chooseClass' data-type="3">排序</view>
+  </view>
+  <view class='filter-btn-list-box {{filterMaskShow ? "filter-mask-show" : ""}}'>
+
+    <view class='filter-full-box' wx:if="{{classTapType == 1}}">
+      <!--分类 - 一级分类  -->
+      <view class='filter-btns-box'>
+        <view bindtap='classTapFun1' class='{{classStep_1_val == 1 ? "classStap_act" : ""}}' data-type="1">不限</view>
+        <view bindtap='classTapFun1' class='{{classStep_1_val == 2 ? "classStap_act" : ""}}' data-type="2">兴趣教育</view>
+        <view bindtap='classTapFun1' class='{{classStep_1_val == 3 ? "classStap_act" : ""}}' data-type="3">升学辅导</view>
+      </view>
+      <!--分类 - 二级分类  -->
+      <view class='filter-step2-box' wx:if="{{classStep_2_show}}">
+          <scroll-view class='filter-step-box-scroll' scroll-y style="height: 100%;">
+            <view bindtap="classTapFun2" data-type="1">二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+          </scroll-view>
+      </view>
+    </view>
+
+
+
+    <view class='filter-btns-box' wx:if="{{classTapType == 2}}">
+      <view bindtap='classTapFun'>这是一条按钮2</view>
+      <view bindtap='classTapFun'>这是一条按钮</view>
+      <view bindtap='classTapFun'>这是一条按钮</view>
+      <view bindtap='classTapFun'>这是一条按钮</view>
+    </view>
+    <view class='filter-btns-box' wx:if="{{classTapType == 3}}">
+      <view bindtap='classTapFun'>默认排序</view>
+      <view bindtap='classTapFun'>距离排序</view>
+      <view bindtap='classTapFun'>入住时间最久</view>
+    </view>
+  </view>
+</view>
+<view class='filter-list-box {{pageScrollToFixed ? "filter-box-fixed-tonone" : "filter-list-box-none"}}'>
+  <view> </view>
+  <view> </view>
+  <view> </view>
+</view>
+<view class='data-list'>
+
+  <view class='filter-mask-back {{filterMaskShow ? "filter-mask-show" : ""}}'></view>
+  <!--  -->
+  <view class='data-list-item'>
+    <view class='item-top'>
+      <view class='item-top-img'>
+      
+      </view>
+      <view class='item-top-info'>
+        <view class='top-info-name'>
+          华尔街英语（朝阳大悦城店）
+        </view>
+        <view class='top-info-classname'>
+          <span>二级分类名</span><span>0.8km</span>
+        </view>
+      </view>
+    </view>
+    <view class='item-bot'>
+      <span class="red-tip">服务特色</span>
+      <span class="tip-cont">国庆期间报名，满1000减300元</span>
+    </view>
+  </view>
+  <!--  -->
+  <view class='data-list-item'>
+    <view class='item-top'>
+      <view class='item-top-img'>
+      
+      </view>
+      <view class='item-top-info'>
+        <view class='top-info-name'>
+          华尔街英语（朝阳大悦城店）
+        </view>
+        <view class='top-info-classname'>
+          <span>二级分类名</span><span>0.8km</span>
+        </view>
+      </view>
+    </view>
+    <view class='item-bot'>
+      <span class="red-tip">服务特色</span>
+      <span class="tip-cont">国庆期间报名，满1000减300元</span>
+    </view>
+  </view>
+  <!--  -->
+  <view class='data-list-item'>
+    <view class='item-top'>
+      <view class='item-top-img'>
+      
+      </view>
+      <view class='item-top-info'>
+        <view class='top-info-name'>
+          华尔街英语（朝阳大悦城店）
+        </view>
+        <view class='top-info-classname'>
+          <span>二级分类名</span><span>0.8km</span>
+        </view>
+      </view>
+    </view>
+    <view class='item-bot'>
+      <span class="red-tip">服务特色</span>
+      <span class="tip-cont">国庆期间报名，满1000减300元</span>
+    </view>
+  </view>
+  <!--  -->
+  <view class='data-list-item'>
+    <view class='item-top'>
+      <view class='item-top-img'>
+      
+      </view>
+      <view class='item-top-info'>
+        <view class='top-info-name'>
+          华尔街英语（朝阳大悦城店）
+        </view>
+        <view class='top-info-classname'>
+          <span>二级分类名</span><span>0.8km</span>
+        </view>
+      </view>
+    </view>
+    <view class='item-bot'>
+      <span class="red-tip">服务特色</span>
+      <span class="tip-cont">国庆期间报名，满1000减300元</span>
+    </view>
+  </view>
+  <!--  -->
+  <view class='data-list-item'>
+    <view class='item-top'>
+      <view class='item-top-img'>
+      
+      </view>
+      <view class='item-top-info'>
+        <view class='top-info-name'>
+          华尔街英语（朝阳大悦城店）
+        </view>
+        <view class='top-info-classname'>
+          <span>二级分类名</span><span>0.8km</span>
+        </view>
+      </view>
+    </view>
+    <view class='item-bot'>
+      <span class="red-tip">服务特色</span>
+      <span class="tip-cont">国庆期间报名，满1000减300元</span>
+    </view>
+  </view>
+  <!--  -->
+  <view class='data-list-item'>
+    <view class='item-top'>
+      <view class='item-top-img'>
+      
+      </view>
+      <view class='item-top-info'>
+        <view class='top-info-name'>
+          华尔街英语（朝阳大悦城店）
+        </view>
+        <view class='top-info-classname'>
+          <span>二级分类名</span><span>0.8km</span>
+        </view>
+      </view>
+    </view>
+    <view class='item-bot'>
+      <span class="red-tip">服务特色</span>
+      <span class="tip-cont">国庆期间报名，满1000减300元</span>
+    </view>
+  </view>
+
+</view>

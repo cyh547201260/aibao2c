@@ -1,0 +1,56 @@
+/* pages/login/login.wxss */
+.login-form-box{
+  width: 87.46%;
+  margin: 0 auto;
+  margin-top: 186rpx;
+}
+.input-box{
+  height: 96rpx;
+  line-height: 96rpx;
+}
+.input-box input{
+  font-size: 28rpx;
+  height: 100%;
+  width: 100%;
+}
+.input-box:first-child{
+  border-bottom: 1rpx solid #DDDDDD;
+}
+.vercode-box{
+  overflow: hidden;
+}
+.vercode-box input{
+  width: 70%;
+  float: left;
+}
+.vercode-box .vercode-btn{
+  width: 160rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  border-radius: 8rpx;
+  background: #4ad59e;
+  color: white;
+  float: right;
+  margin-right: 28rpx;
+  margin-top: 17rpx;
+}
+.login-sub-btn{
+  width: 94.67%;
+  margin: 0 auto;
+  height: 96rpx;
+  text-align: center;
+  line-height: 96rpx;
+  font-size: 32rpx;
+  color: white;
+  border-radius: 48rpx;
+  background: #4ad59e;
+  margin-top: 85rpx;
+}
+.login-bot-tip{
+  font-size: 26rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 41rpx;
+}

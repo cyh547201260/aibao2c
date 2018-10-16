@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class='login-form-box'>
+  <view class='input-box'>
+    <input maxlength='11' placeholder='请输入您的手机号'></input>
+  </view>
+  <view class='input-box vercode-box'>
+    <input maxlength='4' placeholder='请输入短信验证码'></input>
+    <span class="vercode-btn">获取验证码</span>
+  </view>
+</view>
+<view class='login-sub-btn'>
+  提交
+</view>
+<view class='login-bot-tip'>
+  无需注册，可直接登录
+</view>
