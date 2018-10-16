@@ -14,6 +14,10 @@ Page({
     classStep_1_val:0,          //分类 - 一级分类
     classStep_2_show:false,     //分类 - 二级分类 - 是否显示
     classStep_2_val:0,          //分类 - 二级分类
+    //地区筛选
+    addressStep_1_val:0,        //地区 - 第一层级
+    addressStep_2_val:0,        //地区 - 第二层级
+
     
   },
   //事件处理函数
@@ -61,14 +65,29 @@ Page({
   //点击筛选想 - 分类 - 二级分类
   classTapFun2:function(e){
     var val = e.currentTarget.dataset.type;
-    console.log(123)
-
     this.setData({
       classStep_2_show: false,
       filterMaskShow:false,
       classStep_2_val: val,
+      classTapType: 0
     })
     console.log(this.data.classStep_2_val)
+  },
+  //点击筛选项 - 地区 - 一级分类
+  addressTapFun1:function(e){
+    var val = e.currentTarget.dataset.type;
+    this.setData({
+      addressStep_1_val: val
+    })
+  },
+  //点击筛选项 - 地区 - 二级分类
+  addressTapFun2: function (e) {
+    var val = e.currentTarget.dataset.type;
+    this.setData({
+      addressStep_2_val: val,
+      filterMaskShow: false,
+      classTapType: 0
+    })
   },
   //点击筛选项 - 分类 - 一级分类
   classTapFun1: function (e) {

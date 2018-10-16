@@ -76,14 +76,40 @@
       </view>
     </view>
 
-
-
-    <view class='filter-btns-box' wx:if="{{classTapType == 2}}">
-      <view bindtap='classTapFun'>这是一条按钮2</view>
-      <view bindtap='classTapFun'>这是一条按钮</view>
-      <view bindtap='classTapFun'>这是一条按钮</view>
-      <view bindtap='classTapFun'>这是一条按钮</view>
+    <!--地区  -->
+    <view class='filter-full-box' wx:if="{{classTapType == 2}}">
+      <!--地区 - 一级分类  -->
+      <view class='filter-step2-box filter-address-left'>
+          <scroll-view class='filter-step-box-scroll' scroll-y style="height: 100%;">
+            <view bindtap='addressTapFun1' class='{{addressStep_1_val == 1 ? "classStap_act" : ""}}' data-type="1">东城区</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+          </scroll-view>
+      </view>
+      <!--地区 - 二级分类  -->
+      <view class='filter-step2-box'>
+          <scroll-view class='filter-step-box-scroll' scroll-y style="height: 100%;">
+            <view bindtap='addressTapFun2' class='{{addressStep_2_val == 1 ? "classStap_act" : ""}}' data-type="1">磁器口</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+            <view>二级分类</view>
+          </scroll-view>
+      </view>
     </view>
+
     <view class='filter-btns-box' wx:if="{{classTapType == 3}}">
       <view bindtap='classTapFun'>默认排序</view>
       <view bindtap='classTapFun'>距离排序</view>
