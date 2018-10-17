@@ -1,2 +1,115 @@
 <!--pages/mechdet/mechdet.wxml-->
-<text>pages/mechdet/mechdet.wxml</text>
+<view class='det-banner'>
+  <image></image>
+</view>
+<view class='det-mechname'>
+  华尔街英语
+</view>
+<view class='det-mechaddress'>
+  <view class='det-mech-addicon'>
+    <image src='../../image/addicon.png'></image>
+  </view>
+  <view class='det-mech-addtext'>
+    <p>北京市丰台区这里那里23号</p>
+    <p>距离您0.8km</p>
+  </view>
+  <view class='det-mech-addtel'>
+    <image src='../../image/addtel.png'></image>
+  </view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'>本店课程</view>
+  <view class='list-box'>
+    <view class='list-item'>
+        <view class='list-image'>
+          <image></image>
+        </view>
+        <view class='list-info'>
+          <view class='class-name'>
+            华尔街英语（朝阳大悦城店）
+          </view>
+          <view class='class-add'>
+            <span class='class-inclass-name'>二级分类名称</span>
+            <span class='class-addmil'>0.8km</span>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class='list-box'>
+    <view class='list-item'>
+        <view class='list-image'>
+          <image></image>
+        </view>
+        <view class='list-info'>
+          <view class='class-name'>
+            华尔街英语（朝阳大悦城店）
+          </view>
+          <view class='class-add'>
+            <span class='class-inclass-name'>二级分类名称</span>
+            <span class='class-addmil'>0.8km</span>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class='show-class-all'>查看全部</view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'>本店课程</view>
+  <view class='mech-info-desc'>
+    <view class='hid-out-mechinfo'>
+      sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa 
+      sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa 
+      sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa sdfsadf sdfasdfs sdfsdaasdfa 
+    </view>
+  </view>
+  <view class='show-class-all show-meinfo-btn'>查看全部</view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'>特色</view>
+  <view class='special-list-box special-box'>
+    <view>· 办学特色</view><view>· 办学特色</view>
+    <view>· 办学特色</view><view>· 办学特色</view>
+    <view>· 办学特色</view><view>· 办学特色</view>
+  </view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'><span>活动视频</span><span class="more-btn">更多</span></view>
+  <view class='det-videos-box'>
+    <swiper display-multiple-items="3.5" previous-margin='30rpx' next-margin="30rpx">
+      <block>
+        <swiper-item>
+          <image src=""/>
+          <view>视频名称视频名称视频名称</view>
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+          <image src=""/>
+          <view>视频名称</view>
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+          <image src=""/>
+          <view>视频名称</view>
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+          <image src=""/>
+          <view>视频名称</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'><span>环境</span></view>
+  <view class='envi-img-box'>
+    <image></image>
+    <image></image>
+  </view>
+</view>
+<view class='appo-btn'>
+  联系商家
+</view>

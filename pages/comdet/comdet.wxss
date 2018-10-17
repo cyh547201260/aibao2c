@@ -26,12 +26,27 @@ page{
 .det-mechaddress{
   display: flex;
 }
+.det-mechaddress.det-mechaddress2{
+  padding: 0 30rpx;
+  margin-top: 15rpx;
+}
+.det-mechaddress.det-mechaddress2 image{
+  transform:translateY(-5rpx);
+}
+.det-mechaddress.det-mechadd-reset{
+  margin-top: 0;
+  padding-top: 0;
+}
 .det-mech-addicon{
   flex: 5;
 }
 .det-mech-addicon image{
   width: 22rpx;
   height: 28rpx;
+}
+.det-mech-addicon2 image{
+  width: 22rpx;
+  height: 23rpx;
 }
 .det-mech-addtext{
   flex: 82;
@@ -119,13 +134,10 @@ page{
   text-align: right;
   padding-right: 30rpx;
 }
-.list-box{
+.list-box .list-item{
   position: relative;
 }
-.list-box:active{
-  background: #E2E2E2;
-}
-.list-box::after{
+.list-box .list-item::after{
   content: " ";
   position: absolute;
   right: 30rpx;
@@ -215,4 +227,49 @@ page{
   left: 0;
   bottom: 0;
   font-size: 32rpx;
+}
+.class-special{
+  padding: 20rpx 30rpx 50rpx 30rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.det-mechname .mech-price{
+  font-size: 32rpx;
+  color: #FF6C00;
+  margin-top: 5rpx;
+}
+.det-big-icon-box{
+  background: white;
+  margin-top: 20rpx;
+  display: flex;
+  padding: 35rpx 0;
+}
+.det-icon-item{
+  flex: 1;
+  text-align: center;
+}
+.det-icon-item image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.det-icon-item view:nth-child(2){
+  font-size: 26rpx;
+  color: #333;
+  margin-top: 15rpx;
+}
+.det-icon-item view:nth-child(3){
+  font-size: 22rpx;
+  color: #666;
+  margin-top: 3rpx;
+}
+.class-info-box .list-item{
+    display: block;
+}
+.class-info-box .list-item::after{
+  border: none;
+}
+.calss-info-title{
+  display: block;
+  font-size: 28rpx;
+  color: #333;
 }

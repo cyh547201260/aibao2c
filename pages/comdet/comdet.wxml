@@ -1,0 +1,79 @@
+<!--pages/mechdet/mechdet.wxml-->
+<view class='det-banner'>
+  <image></image>
+</view>
+<view class='det-mechname'>
+  <view>华尔街英语培训机构</view>
+  <view class='mech-price'>120元</view>
+</view>
+
+<view class='det-big-icon-box'>
+  <view class='det-icon-item'>
+    <image src='../../image/det_icon_1.png'></image>
+    <view>适合人群</view>
+    <view>青少年、成人</view>
+  </view>
+  <view class='det-icon-item'>
+    <image src='../../image/det_icon_2.png'></image>
+    <view>适合基础</view>
+    <view>不限</view>
+  </view>
+  <view class='det-icon-item'>
+    <image src='../../image/det_icon_3.png'></image>
+    <view>上课人数</view>
+    <view>1-5人</view>
+  </view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'>课程亮点</view>
+  <view class='class-special'>
+    <view>办学特色办学特色办学特色办学特色办学特色办学特色办学特色</view>
+  </view>
+</view>
+<view class='det-class-list'>
+  <view class='list-title'>商家信息</view>
+  <view class='det-mechaddress det-mechaddress2'>
+    <view class='det-mech-addicon det-mech-addicon2'>
+      <image src='../../image/addicon_2.png'></image>
+    </view>
+    <view class='det-mech-addtext det-mechadd-reset'>
+      <p>华尔街英语</p>
+    </view>
+  </view>
+  <view class='det-mechaddress det-mechadd-reset'>
+    <view class='det-mech-addicon'>
+      <image src='../../image/addicon.png'></image>
+    </view>
+    <view class='det-mech-addtext'>
+      <p>北京市丰台区这里那里23号</p>
+      <p>距离您0.8km</p>
+    </view>
+    <view class='det-mech-addtel'>
+      <image src='../../image/addtel.png'></image>
+    </view>
+  </view>
+</view>
+
+<view class='det-class-list'>
+  <view class='list-title'>课程详情</view>
+  <view class='list-box class-info-box'>
+    <view class='list-item'>
+        <p class='calss-info-title'>适用对象</p>
+        <p class='calss-info-title'>适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象</p>
+    </view>
+    <view class='list-item'>
+        <p class='calss-info-title'>适用对象</p>
+        <p class='calss-info-title'>适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象</p>
+    </view>
+    <view class='list-item'>
+        <p class='calss-info-title'>适用对象</p>
+        <p class='calss-info-title'>适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象适用对象</p>
+    </view>
+  </view>
+</view>
+
+
+
+<view class='appo-btn'>
+  预约试听
+</view>

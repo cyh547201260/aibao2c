@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/comdet/comdet",
     "pages/mechdet/mechdet",
     "pages/index/index",
     "pages/login/login"
