@@ -1,0 +1,28 @@
+<!--pages/videolist/videolist.wxml-->
+<view class='list-title'>
+  活动视频
+</view>
+<view class='list-box'>
+  <view class='list-box-item' bindtap="fun">
+    <image></image>
+    <view>视频名称</view>
+  </view>
+  <view class='list-box-item'>
+    <image></image>
+    <view>视频名称</view>
+  </view>
+  <view class='list-box-item'>
+    <image></image>
+    <view>视频名称</view>
+  </view>
+  <view class='list-box-item'>
+    <image></image>
+    <view>视频名称</view>
+  </view>
+  <view class='list-box-item'>
+    <image></image>
+    <view>视频名称</view>
+  </view>
+</view>
+
+<view class='bot-btn'>返回店里看看</view>

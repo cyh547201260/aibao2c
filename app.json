@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/comdet/comdet",
-    "pages/mechdet/mechdet",
     "pages/index/index",
+    "pages/videolist/videolist",
+    "pages/mechdet/mechdet",
+    "pages/comdet/comdet",
     "pages/login/login"
   ],
   "window":{

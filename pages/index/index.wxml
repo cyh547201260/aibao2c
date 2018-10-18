@@ -1,6 +1,15 @@
 <!--index.wxml-->
-<view class='search-top-box'>
-  <input placeholder='请输入搜索关键词'></input>
+<view class='search-top-box {{searchShowState ? "search-show-header":""}}'>
+  <input bindfocus='searchFocus' placeholder='请输入搜索关键词'></input><view class='search-btn' bindtap='searchFun' hidden='{{!searchShowState}}'>搜索</view>
+</view>
+<view class='search-body-box' hidden='{{!searchShowState}}'>
+  <view class='search-body-title'>历史搜索</view>
+  <view class='search-cont-list-box'>
+    <span class='search-cont-item'>教育咨询</span>
+    <span class='search-cont-item'>教育咨询</span>
+    <span class='search-cont-item'>教育咨询教育咨询</span>
+  </view>
+  <view class='clear-search-btn'><image src='../../image/clear_icon.png'></image> 清空查询记录</view>
 </view>
 <view class='banner-slide' >
   <swiper indicator-dots="{{true}}" circular="{{true}}" indicator-color="{{'#FFFFFF'}}" indicator-active-color="{{'#2DD0BC'}}" autoplay="{{true}}" interval="3000">

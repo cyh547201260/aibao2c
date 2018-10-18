@@ -1,0 +1,45 @@
+/* pages/videolist/videolist.wxss */
+page{
+  padding-bottom: 120rpx;
+}
+.list-title{
+  font-size: 34rpx;
+  color: #333;
+  padding: 20rpx 30rpx;
+}
+.list-box{
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.list-box-item{
+  margin-bottom: 35rpx;
+}
+.list-box-item:nth-child(odd){
+  float: left;
+}
+.list-box-item:nth-child(even){
+  float: right;
+}
+.list-box-item image{
+  width: 320rpx;
+  height: 210rpx;
+  background: pink;
+}
+.list-box-item view{
+  white-space: nowrap;
+  font-size: 28rpx;
+  color: #333;
+  text-overflow: ellipsis;
+}
+.bot-btn{
+  font-size: 32rpx;
+  color: white;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #4AD59E;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}

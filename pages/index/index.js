@@ -9,6 +9,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     pageScrollToFixed:false,
+    searchShowState:false,   //搜索覆层显示
     filterMaskShow:false,   //蒙版显示
     classTapType:0,         //选择的分类
     classStep_1_val:0,          //分类 - 一级分类
@@ -20,10 +21,16 @@ Page({
 
     
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  // 搜索框聚焦
+  searchFocus:function(){
+    this.setData({
+      searchShowState:true
+    })
+  },
+  //点击搜索按钮
+  searchFun:function(){
+    this.setData({
+      searchShowState: false
     })
   },
   onLoad: function () {
